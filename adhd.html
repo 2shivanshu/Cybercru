@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Depression Screening</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:#0c2d57;
+            margin-top: 20px;
+            padding: 0;
+
+        }
+        
+        header {
+            background-color:#0c2d57;
+            color: white;
+            text-align: left;
+            padding-left: 150px;
+            font-size: 25px;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #adhd-form {
+            width: 80%;
+            padding: 20px;
+            background-color:#04101fa5;
+            color: white;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+        
+        @media (max-width: 600px) {
+            #adhd-form {
+                width: 100%;
+                margin: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ADHD Screening</h1>
+    </header>
+
+    <main>
+        <form id="adhd-form">
+            <br>
+            <label for="question1">1. How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?</label><br>
+            <select id="question1" name="question1">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question2">2. Feeling down, depressed, or hopeless?</label><br>
+            <select id="question2" name="question2">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question3">3. Trouble falling or staying asleep, or sleeping too much?</label><br>
+            <select id="question3" name="question3">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question4">4. Feeling tired or having little energy?</label><br>
+            <select id="question4" name="question4">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question5">5. Poor appetite or overeating?</label><br>
+            <select id="question5" name="question5">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question6">6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down?</label>
+            <br>
+            <select id="question6" name="question6">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question7">7. Trouble concentrating on things, such as reading the newspaper or watching television?</label>
+            <br>
+            <select id="question7" name="question7">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question8">8. Moving or speaking so slowly that other people could have noticed
+                Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?</label>
+            <br>
+            <select id="question8" name="question8">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+
+
+            <label for="question9">9. Thoughts that you would be better off dead, or of hurting yourself?</label><br>
+            <select id="question9" name="question9">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+            
+
+            <label for="question10">10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</label>
+            <br>
+            <select id="question10" name="question10">
+                <option value="1">Never</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Very Often</option>
+            </select><br>
+z
+            <button type="button" onclick="calculateADHDScore()">Submit</button>
+        </form>
+    </main>
+
+    <script src="adhd.js"></script>
+</body>
+</html>
