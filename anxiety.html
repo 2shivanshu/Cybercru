@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anxiety Screening</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:#0c2d57;
+            margin-top: 20px;
+            padding: 0;
+
+        }
+        
+        header {
+            background-color:#0c2d57;
+            color: white;
+            text-align: left;
+            padding-left: 150px;
+            font-size: 25px;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #anxiety-form {
+            width: 80%;
+            padding: 20px;
+            background-color:#04101fa5;
+            color: white;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+        
+        @media (max-width: 600px) {
+            #anxiety-form {
+                width: 100%;
+                margin: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anxiety Screening</h1>
+    </header>
+
+    <main>
+        <form id="anxiety-form">
+            <br>
+            <label for="question1">1. Feeling nervous, anxious, or on edge?</label><br>
+            <select id="question1" name="question1">
+                <option value="1">Not at all</option>
+                <option value="2">Several days</option>
+                <option value="3">More than half the days</option>
+                <option value="4">Nearly every day</option>
+            </select><br>
+
+
+            <label for="question2">2. Not being able to stop or control worrying?</label><br>
+            <select id="question2" name="question2">
+                <option value="1">Not at all</option>
+                <option value="2">Several days</option>
+                <option value="3">More than half the days</option>
+                <option value="4">Nearly every day</option>
+            </select><br>
+
+
+            <label for="question3">3. Worrying too much about different things?</label><br>
+            <select id="question3" name="question3">
+                <option value="1">Not at all</option>
+                <option value="2">Several days</option>
+                <option value="3">More than half the days</option>
+                <option value="4">Nearly every day</option>
+            </select><br>
+
+
+            <label for="question4">4. Trouble relaxing?</label><br>
+            <select id="question4" name="question4">
+                <option value="1">Not at all</option>
+                <option value="2">Several days</option>
+                <option value="3">More than half the days</option>
+                <option value="4">Nearly every day</option>
+            </select><br>
+
+
+            <label for="question5">5. Being so restless that it is hard to sit still?</label><br>
+            <select id="question5" name="question5">
+                <option value="1">Not at all</option>
+                <option value="2">Several days</option>
+                <option value="3">More than half the days</option>
+                <option value="4">Nearly every day</option>
+            </select><br>
+
+
+            <label for="question6">6. Becoming easily annoyed or irritable?</label>
+            <br>
+            <select id="question6" name="question6">
+                <option value="1">Not at all</option>
+                <option value="2">Several days</option>
+                <option value="3">More than half the days</option>
+                <option value="4">Nearly every day</option>
+            </select><br>
+
+
+            <label for="question7">7. Feeling afraid, as if something awful might happen?</label>
+            <br>
+            <select id="question7" name="question7">
+                <option value="1">Not at all</option>
+                <option value="2">Several days</option>
+                <option value="3">More than half the days</option>
+                <option value="4">Nearly every day</option>
+            </select><br>
+
+
+            <button type="button" onclick="calculateAnxietyScore()">Submit</button>
+        </form>
+    </main>
+
+    <script src="anxiety.js"></script>
+</body>
+</html>

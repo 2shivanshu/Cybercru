@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .section {
+      flex: 1;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 10px;
+      background-color: #f0f0f0;
+      position: relative; /* Added for positioning the image */
+    }
+
+    .section1 {
+      background-color: #ffc107;
+    }
+
+    .heading {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .section2 {
+      background-color: #4caf50;
+    }
+
+    .bullet-points {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bullet-points li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .doc-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 10%;
+      margin-top: 2%;
+      max-width: 20%; /* Ensures the image doesn't overflow its container */
+      border-radius: 50%;
+    }
+
+    .anonym-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 1%;
+      margin-bottom: 20%;
+      max-width: 25%; /* Ensures the image doesn't overflow its container */
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+    <h1>You might have Anxiety issues. Please feel free to get help from the options below:</h1>
+  <div class="container">
+    <div class="section section1">
+      <div class="heading">Get Anonymous Help</div>
+      <div class="description">
+        We know you might not be comfortable with sharing your identity with anyone, <br> so get free anonymous consultations with doctors without sharing your personal details.
+        <img class="anonym-image" src="anonym.png" alt="Anonymous Image">
+    </div>
+    </div>
+
+    <div class="section section2">
+      <div class="heading">Consult a Doctor</div>
+      <ul class="bullet-points">
+        <li>Dr. Lorem Ipsum</li>
+        <li>987xxxxx10</li>
+        <li>lorem@ipsum.com</li>
+        <li>XYZ Hospital, ABC Road</li>
+      </ul>
+
+      <!-- Image added to Section 2 -->
+      <img class="doc-image" src="doc.png" alt="Doctor Image">
+    </div>
+  </div>
+
+</body>
+</html>
